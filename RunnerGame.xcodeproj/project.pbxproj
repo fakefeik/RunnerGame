@@ -7,63 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8407E4291A1A537600AA5F3F /* Mesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 8407E4281A1A537600AA5F3F /* Mesh.m */; };
-		8407E42C1A1A539800AA5F3F /* JsonModelLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8407E42B1A1A539800AA5F3F /* JsonModelLoader.m */; };
-		8407E42F1A1A786B00AA5F3F /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = 8407E42E1A1A786B00AA5F3F /* Cube.m */; };
-		8462FD951A1A228000DE4EA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8462FD941A1A228000DE4EA6 /* main.m */; };
-		8462FD981A1A228000DE4EA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8462FD971A1A228000DE4EA6 /* AppDelegate.m */; };
-		8462FD9A1A1A228000DE4EA6 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8462FD991A1A228000DE4EA6 /* Shader.fsh */; };
-		8462FD9C1A1A228000DE4EA6 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8462FD9B1A1A228000DE4EA6 /* Shader.vsh */; };
-		8462FD9F1A1A228000DE4EA6 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8462FD9E1A1A228000DE4EA6 /* GameViewController.m */; };
-		8462FDA21A1A228000DE4EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8462FDA01A1A228000DE4EA6 /* Main.storyboard */; };
-		8462FDA41A1A228000DE4EA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8462FDA31A1A228000DE4EA6 /* Images.xcassets */; };
-		8462FDA71A1A228000DE4EA6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8462FDA51A1A228000DE4EA6 /* LaunchScreen.xib */; };
-		8462FDB31A1A228000DE4EA6 /* RunnerGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8462FDB21A1A228000DE4EA6 /* RunnerGameTests.m */; };
+		840AC4E41A278B6600B88B59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AC4E31A278B6600B88B59 /* main.m */; };
+		840AC4E71A278B6600B88B59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AC4E61A278B6600B88B59 /* AppDelegate.m */; };
+		840AC4EE1A278B6600B88B59 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AC4ED1A278B6600B88B59 /* GameViewController.m */; };
+		840AC4F11A278B6600B88B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840AC4EF1A278B6600B88B59 /* Main.storyboard */; };
+		840AC4F31A278B6600B88B59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840AC4F21A278B6600B88B59 /* Images.xcassets */; };
+		840AC4F61A278B6600B88B59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840AC4F41A278B6600B88B59 /* LaunchScreen.xib */; };
+		840AC5021A278B6700B88B59 /* RunnerGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AC5011A278B6700B88B59 /* RunnerGameTests.m */; };
+		840AC5161A27948D00B88B59 /* autism_model.jm in Resources */ = {isa = PBXBuildFile; fileRef = 840AC50C1A27948D00B88B59 /* autism_model.jm */; };
+		840AC5171A27948D00B88B59 /* autism_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 840AC50D1A27948D00B88B59 /* autism_texture.jpg */; };
+		840AC5181A27948D00B88B59 /* cheeki_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 840AC50E1A27948D00B88B59 /* cheeki_texture.png */; };
+		840AC5191A27948D00B88B59 /* model.jm in Resources */ = {isa = PBXBuildFile; fileRef = 840AC50F1A27948D00B88B59 /* model.jm */; };
+		840AC51A1A27948D00B88B59 /* simple_shader.fs in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5101A27948D00B88B59 /* simple_shader.fs */; };
+		840AC51B1A27948D00B88B59 /* simple_shader.vs in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5111A27948D00B88B59 /* simple_shader.vs */; };
+		840AC51C1A27948D00B88B59 /* sky_2_cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5121A27948D00B88B59 /* sky_2_cube.png */; };
+		840AC51D1A27948D00B88B59 /* sphere.jm in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5131A27948D00B88B59 /* sphere.jm */; };
+		840AC51E1A27948D00B88B59 /* yoba.jm in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5141A27948D00B88B59 /* yoba.jm */; };
+		840AC51F1A27948D00B88B59 /* yoba.png in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5151A27948D00B88B59 /* yoba.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8462FDAD1A1A228000DE4EA6 /* PBXContainerItemProxy */ = {
+		840AC4FC1A278B6700B88B59 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8462FD871A1A228000DE4EA6 /* Project object */;
+			containerPortal = 840AC4D61A278B6600B88B59 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8462FD8E1A1A228000DE4EA6;
+			remoteGlobalIDString = 840AC4DD1A278B6600B88B59;
 			remoteInfo = RunnerGame;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8407E4271A1A537600AA5F3F /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
-		8407E4281A1A537600AA5F3F /* Mesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mesh.m; sourceTree = "<group>"; };
-		8407E42A1A1A539800AA5F3F /* JsonModelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonModelLoader.h; sourceTree = "<group>"; };
-		8407E42B1A1A539800AA5F3F /* JsonModelLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonModelLoader.m; sourceTree = "<group>"; };
-		8407E42D1A1A786B00AA5F3F /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
-		8407E42E1A1A786B00AA5F3F /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
-		8462FD8F1A1A228000DE4EA6 /* RunnerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunnerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8462FD931A1A228000DE4EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8462FD941A1A228000DE4EA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8462FD961A1A228000DE4EA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8462FD971A1A228000DE4EA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8462FD991A1A228000DE4EA6 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		8462FD9B1A1A228000DE4EA6 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		8462FD9D1A1A228000DE4EA6 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		8462FD9E1A1A228000DE4EA6 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		8462FDA11A1A228000DE4EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8462FDA31A1A228000DE4EA6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8462FDA61A1A228000DE4EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8462FDAC1A1A228000DE4EA6 /* RunnerGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8462FDB11A1A228000DE4EA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8462FDB21A1A228000DE4EA6 /* RunnerGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunnerGameTests.m; sourceTree = "<group>"; };
+		840AC4DE1A278B6600B88B59 /* RunnerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunnerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840AC4E21A278B6600B88B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840AC4E31A278B6600B88B59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		840AC4E51A278B6600B88B59 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		840AC4E61A278B6600B88B59 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		840AC4EC1A278B6600B88B59 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		840AC4ED1A278B6600B88B59 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		840AC4F01A278B6600B88B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		840AC4F21A278B6600B88B59 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		840AC4F51A278B6600B88B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		840AC4FB1A278B6700B88B59 /* RunnerGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		840AC5001A278B6700B88B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840AC5011A278B6700B88B59 /* RunnerGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunnerGameTests.m; sourceTree = "<group>"; };
+		840AC50C1A27948D00B88B59 /* autism_model.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = autism_model.jm; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/autism_model.jm; sourceTree = "<group>"; };
+		840AC50D1A27948D00B88B59 /* autism_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = autism_texture.jpg; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/autism_texture.jpg; sourceTree = "<group>"; };
+		840AC50E1A27948D00B88B59 /* cheeki_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cheeki_texture.png; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/cheeki_texture.png; sourceTree = "<group>"; };
+		840AC50F1A27948D00B88B59 /* model.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = model.jm; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/model.jm; sourceTree = "<group>"; };
+		840AC5101A27948D00B88B59 /* simple_shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = simple_shader.fs; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/simple_shader.fs; sourceTree = "<group>"; };
+		840AC5111A27948D00B88B59 /* simple_shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = simple_shader.vs; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/simple_shader.vs; sourceTree = "<group>"; };
+		840AC5121A27948D00B88B59 /* sky_2_cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sky_2_cube.png; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/sky_2_cube.png; sourceTree = "<group>"; };
+		840AC5131A27948D00B88B59 /* sphere.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sphere.jm; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/sphere.jm; sourceTree = "<group>"; };
+		840AC5141A27948D00B88B59 /* yoba.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = yoba.jm; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/yoba.jm; sourceTree = "<group>"; };
+		840AC5151A27948D00B88B59 /* yoba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yoba.png; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/yoba.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8462FD8C1A1A228000DE4EA6 /* Frameworks */ = {
+		840AC4DB1A278B6600B88B59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8462FDA91A1A228000DE4EA6 /* Frameworks */ = {
+		840AC4F81A278B6700B88B59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,83 +80,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8462FD861A1A228000DE4EA6 = {
+		840AC4D51A278B6600B88B59 = {
 			isa = PBXGroup;
 			children = (
-				8462FD911A1A228000DE4EA6 /* RunnerGame */,
-				8462FDAF1A1A228000DE4EA6 /* RunnerGameTests */,
-				8462FD901A1A228000DE4EA6 /* Products */,
+				840AC4E01A278B6600B88B59 /* RunnerGame */,
+				840AC4FE1A278B6700B88B59 /* RunnerGameTests */,
+				840AC4DF1A278B6600B88B59 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8462FD901A1A228000DE4EA6 /* Products */ = {
+		840AC4DF1A278B6600B88B59 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8462FD8F1A1A228000DE4EA6 /* RunnerGame.app */,
-				8462FDAC1A1A228000DE4EA6 /* RunnerGameTests.xctest */,
+				840AC4DE1A278B6600B88B59 /* RunnerGame.app */,
+				840AC4FB1A278B6700B88B59 /* RunnerGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8462FD911A1A228000DE4EA6 /* RunnerGame */ = {
+		840AC4E01A278B6600B88B59 /* RunnerGame */ = {
 			isa = PBXGroup;
 			children = (
-				8462FD961A1A228000DE4EA6 /* AppDelegate.h */,
-				8462FD971A1A228000DE4EA6 /* AppDelegate.m */,
-				8462FD991A1A228000DE4EA6 /* Shader.fsh */,
-				8462FD9B1A1A228000DE4EA6 /* Shader.vsh */,
-				8462FD9D1A1A228000DE4EA6 /* GameViewController.h */,
-				8462FD9E1A1A228000DE4EA6 /* GameViewController.m */,
-				8462FDA01A1A228000DE4EA6 /* Main.storyboard */,
-				8462FDA31A1A228000DE4EA6 /* Images.xcassets */,
-				8462FDA51A1A228000DE4EA6 /* LaunchScreen.xib */,
-				8462FD921A1A228000DE4EA6 /* Supporting Files */,
-				8407E4271A1A537600AA5F3F /* Mesh.h */,
-				8407E4281A1A537600AA5F3F /* Mesh.m */,
-				8407E42A1A1A539800AA5F3F /* JsonModelLoader.h */,
-				8407E42B1A1A539800AA5F3F /* JsonModelLoader.m */,
-				8407E42D1A1A786B00AA5F3F /* Cube.h */,
-				8407E42E1A1A786B00AA5F3F /* Cube.m */,
+				840AC50B1A27947100B88B59 /* Assets */,
+				840AC4E51A278B6600B88B59 /* AppDelegate.h */,
+				840AC4E61A278B6600B88B59 /* AppDelegate.m */,
+				840AC4EC1A278B6600B88B59 /* GameViewController.h */,
+				840AC4ED1A278B6600B88B59 /* GameViewController.m */,
+				840AC4EF1A278B6600B88B59 /* Main.storyboard */,
+				840AC4F21A278B6600B88B59 /* Images.xcassets */,
+				840AC4F41A278B6600B88B59 /* LaunchScreen.xib */,
+				840AC4E11A278B6600B88B59 /* Supporting Files */,
 			);
 			path = RunnerGame;
 			sourceTree = "<group>";
 		};
-		8462FD921A1A228000DE4EA6 /* Supporting Files */ = {
+		840AC4E11A278B6600B88B59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8462FD931A1A228000DE4EA6 /* Info.plist */,
-				8462FD941A1A228000DE4EA6 /* main.m */,
+				840AC4E21A278B6600B88B59 /* Info.plist */,
+				840AC4E31A278B6600B88B59 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8462FDAF1A1A228000DE4EA6 /* RunnerGameTests */ = {
+		840AC4FE1A278B6700B88B59 /* RunnerGameTests */ = {
 			isa = PBXGroup;
 			children = (
-				8462FDB21A1A228000DE4EA6 /* RunnerGameTests.m */,
-				8462FDB01A1A228000DE4EA6 /* Supporting Files */,
+				840AC5011A278B6700B88B59 /* RunnerGameTests.m */,
+				840AC4FF1A278B6700B88B59 /* Supporting Files */,
 			);
 			path = RunnerGameTests;
 			sourceTree = "<group>";
 		};
-		8462FDB01A1A228000DE4EA6 /* Supporting Files */ = {
+		840AC4FF1A278B6700B88B59 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8462FDB11A1A228000DE4EA6 /* Info.plist */,
+				840AC5001A278B6700B88B59 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		840AC50B1A27947100B88B59 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				840AC50C1A27948D00B88B59 /* autism_model.jm */,
+				840AC50D1A27948D00B88B59 /* autism_texture.jpg */,
+				840AC50E1A27948D00B88B59 /* cheeki_texture.png */,
+				840AC50F1A27948D00B88B59 /* model.jm */,
+				840AC5101A27948D00B88B59 /* simple_shader.fs */,
+				840AC5111A27948D00B88B59 /* simple_shader.vs */,
+				840AC5121A27948D00B88B59 /* sky_2_cube.png */,
+				840AC5131A27948D00B88B59 /* sphere.jm */,
+				840AC5141A27948D00B88B59 /* yoba.jm */,
+				840AC5151A27948D00B88B59 /* yoba.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8462FD8E1A1A228000DE4EA6 /* RunnerGame */ = {
+		840AC4DD1A278B6600B88B59 /* RunnerGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8462FDB61A1A228000DE4EA6 /* Build configuration list for PBXNativeTarget "RunnerGame" */;
+			buildConfigurationList = 840AC5051A278B6700B88B59 /* Build configuration list for PBXNativeTarget "RunnerGame" */;
 			buildPhases = (
-				8462FD8B1A1A228000DE4EA6 /* Sources */,
-				8462FD8C1A1A228000DE4EA6 /* Frameworks */,
-				8462FD8D1A1A228000DE4EA6 /* Resources */,
+				840AC4DA1A278B6600B88B59 /* Sources */,
+				840AC4DB1A278B6600B88B59 /* Frameworks */,
+				840AC4DC1A278B6600B88B59 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -157,46 +174,46 @@
 			);
 			name = RunnerGame;
 			productName = RunnerGame;
-			productReference = 8462FD8F1A1A228000DE4EA6 /* RunnerGame.app */;
+			productReference = 840AC4DE1A278B6600B88B59 /* RunnerGame.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8462FDAB1A1A228000DE4EA6 /* RunnerGameTests */ = {
+		840AC4FA1A278B6700B88B59 /* RunnerGameTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8462FDB91A1A228000DE4EA6 /* Build configuration list for PBXNativeTarget "RunnerGameTests" */;
+			buildConfigurationList = 840AC5081A278B6700B88B59 /* Build configuration list for PBXNativeTarget "RunnerGameTests" */;
 			buildPhases = (
-				8462FDA81A1A228000DE4EA6 /* Sources */,
-				8462FDA91A1A228000DE4EA6 /* Frameworks */,
-				8462FDAA1A1A228000DE4EA6 /* Resources */,
+				840AC4F71A278B6700B88B59 /* Sources */,
+				840AC4F81A278B6700B88B59 /* Frameworks */,
+				840AC4F91A278B6700B88B59 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8462FDAE1A1A228000DE4EA6 /* PBXTargetDependency */,
+				840AC4FD1A278B6700B88B59 /* PBXTargetDependency */,
 			);
 			name = RunnerGameTests;
 			productName = RunnerGameTests;
-			productReference = 8462FDAC1A1A228000DE4EA6 /* RunnerGameTests.xctest */;
+			productReference = 840AC4FB1A278B6700B88B59 /* RunnerGameTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8462FD871A1A228000DE4EA6 /* Project object */ = {
+		840AC4D61A278B6600B88B59 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Admin;
 				TargetAttributes = {
-					8462FD8E1A1A228000DE4EA6 = {
+					840AC4DD1A278B6600B88B59 = {
 						CreatedOnToolsVersion = 6.1;
 					};
-					8462FDAB1A1A228000DE4EA6 = {
+					840AC4FA1A278B6700B88B59 = {
 						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 8462FD8E1A1A228000DE4EA6;
+						TestTargetID = 840AC4DD1A278B6600B88B59;
 					};
 				};
 			};
-			buildConfigurationList = 8462FD8A1A1A228000DE4EA6 /* Build configuration list for PBXProject "RunnerGame" */;
+			buildConfigurationList = 840AC4D91A278B6600B88B59 /* Build configuration list for PBXProject "RunnerGame" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -204,31 +221,39 @@
 				en,
 				Base,
 			);
-			mainGroup = 8462FD861A1A228000DE4EA6;
-			productRefGroup = 8462FD901A1A228000DE4EA6 /* Products */;
+			mainGroup = 840AC4D51A278B6600B88B59;
+			productRefGroup = 840AC4DF1A278B6600B88B59 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8462FD8E1A1A228000DE4EA6 /* RunnerGame */,
-				8462FDAB1A1A228000DE4EA6 /* RunnerGameTests */,
+				840AC4DD1A278B6600B88B59 /* RunnerGame */,
+				840AC4FA1A278B6700B88B59 /* RunnerGameTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8462FD8D1A1A228000DE4EA6 /* Resources */ = {
+		840AC4DC1A278B6600B88B59 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8462FDA71A1A228000DE4EA6 /* LaunchScreen.xib in Resources */,
-				8462FDA21A1A228000DE4EA6 /* Main.storyboard in Resources */,
-				8462FDA41A1A228000DE4EA6 /* Images.xcassets in Resources */,
-				8462FD9C1A1A228000DE4EA6 /* Shader.vsh in Resources */,
-				8462FD9A1A1A228000DE4EA6 /* Shader.fsh in Resources */,
+				840AC4F61A278B6600B88B59 /* LaunchScreen.xib in Resources */,
+				840AC4F11A278B6600B88B59 /* Main.storyboard in Resources */,
+				840AC4F31A278B6600B88B59 /* Images.xcassets in Resources */,
+				840AC5191A27948D00B88B59 /* model.jm in Resources */,
+				840AC5161A27948D00B88B59 /* autism_model.jm in Resources */,
+				840AC51E1A27948D00B88B59 /* yoba.jm in Resources */,
+				840AC51D1A27948D00B88B59 /* sphere.jm in Resources */,
+				840AC51A1A27948D00B88B59 /* simple_shader.fs in Resources */,
+				840AC5181A27948D00B88B59 /* cheeki_texture.png in Resources */,
+				840AC51F1A27948D00B88B59 /* yoba.png in Resources */,
+				840AC51B1A27948D00B88B59 /* simple_shader.vs in Resources */,
+				840AC5171A27948D00B88B59 /* autism_texture.jpg in Resources */,
+				840AC51C1A27948D00B88B59 /* sky_2_cube.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8462FDAA1A1A228000DE4EA6 /* Resources */ = {
+		840AC4F91A278B6700B88B59 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,50 +263,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8462FD8B1A1A228000DE4EA6 /* Sources */ = {
+		840AC4DA1A278B6600B88B59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8462FD981A1A228000DE4EA6 /* AppDelegate.m in Sources */,
-				8462FD9F1A1A228000DE4EA6 /* GameViewController.m in Sources */,
-				8407E4291A1A537600AA5F3F /* Mesh.m in Sources */,
-				8407E42C1A1A539800AA5F3F /* JsonModelLoader.m in Sources */,
-				8407E42F1A1A786B00AA5F3F /* Cube.m in Sources */,
-				8462FD951A1A228000DE4EA6 /* main.m in Sources */,
+				840AC4E71A278B6600B88B59 /* AppDelegate.m in Sources */,
+				840AC4EE1A278B6600B88B59 /* GameViewController.m in Sources */,
+				840AC4E41A278B6600B88B59 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8462FDA81A1A228000DE4EA6 /* Sources */ = {
+		840AC4F71A278B6700B88B59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8462FDB31A1A228000DE4EA6 /* RunnerGameTests.m in Sources */,
+				840AC5021A278B6700B88B59 /* RunnerGameTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8462FDAE1A1A228000DE4EA6 /* PBXTargetDependency */ = {
+		840AC4FD1A278B6700B88B59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8462FD8E1A1A228000DE4EA6 /* RunnerGame */;
-			targetProxy = 8462FDAD1A1A228000DE4EA6 /* PBXContainerItemProxy */;
+			target = 840AC4DD1A278B6600B88B59 /* RunnerGame */;
+			targetProxy = 840AC4FC1A278B6700B88B59 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8462FDA01A1A228000DE4EA6 /* Main.storyboard */ = {
+		840AC4EF1A278B6600B88B59 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8462FDA11A1A228000DE4EA6 /* Base */,
+				840AC4F01A278B6600B88B59 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		8462FDA51A1A228000DE4EA6 /* LaunchScreen.xib */ = {
+		840AC4F41A278B6600B88B59 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8462FDA61A1A228000DE4EA6 /* Base */,
+				840AC4F51A278B6600B88B59 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -289,7 +311,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		8462FDB41A1A228000DE4EA6 /* Debug */ = {
+		840AC5031A278B6700B88B59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -331,7 +353,7 @@
 			};
 			name = Debug;
 		};
-		8462FDB51A1A228000DE4EA6 /* Release */ = {
+		840AC5041A278B6700B88B59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -367,29 +389,27 @@
 			};
 			name = Release;
 		};
-		8462FDB71A1A228000DE4EA6 /* Debug */ = {
+		840AC5061A278B6700B88B59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = RunnerGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		8462FDB81A1A228000DE4EA6 /* Release */ = {
+		840AC5071A278B6700B88B59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_ARC = NO;
 				INFOPLIST_FILE = RunnerGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		8462FDBA1A1A228000DE4EA6 /* Debug */ = {
+		840AC5091A278B6700B88B59 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -408,7 +428,7 @@
 			};
 			name = Debug;
 		};
-		8462FDBB1A1A228000DE4EA6 /* Release */ = {
+		840AC50A1A278B6700B88B59 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -426,34 +446,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8462FD8A1A1A228000DE4EA6 /* Build configuration list for PBXProject "RunnerGame" */ = {
+		840AC4D91A278B6600B88B59 /* Build configuration list for PBXProject "RunnerGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8462FDB41A1A228000DE4EA6 /* Debug */,
-				8462FDB51A1A228000DE4EA6 /* Release */,
+				840AC5031A278B6700B88B59 /* Debug */,
+				840AC5041A278B6700B88B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8462FDB61A1A228000DE4EA6 /* Build configuration list for PBXNativeTarget "RunnerGame" */ = {
+		840AC5051A278B6700B88B59 /* Build configuration list for PBXNativeTarget "RunnerGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8462FDB71A1A228000DE4EA6 /* Debug */,
-				8462FDB81A1A228000DE4EA6 /* Release */,
+				840AC5061A278B6700B88B59 /* Debug */,
+				840AC5071A278B6700B88B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		8462FDB91A1A228000DE4EA6 /* Build configuration list for PBXNativeTarget "RunnerGameTests" */ = {
+		840AC5081A278B6700B88B59 /* Build configuration list for PBXNativeTarget "RunnerGameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8462FDBA1A1A228000DE4EA6 /* Debug */,
-				8462FDBB1A1A228000DE4EA6 /* Release */,
+				840AC5091A278B6700B88B59 /* Debug */,
+				840AC50A1A278B6700B88B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8462FD871A1A228000DE4EA6 /* Project object */;
+	rootObject = 840AC4D61A278B6600B88B59 /* Project object */;
 }

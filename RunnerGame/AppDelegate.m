@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  RunnerGame
 //
-//  Created by Admin on 17.11.14.
+//  Created by Admin on 27.11.14.
 //  Copyright (c) 2014 Admin. All rights reserved.
 //
 
@@ -18,14 +18,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
-}
-
--(NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-    return UIInterfaceOrientationMaskLandscape;
-}
-
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation {
-    return orientation==UIInterfaceOrientationMaskLandscape;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
