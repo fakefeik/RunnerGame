@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840306FB1A2C8E490021EF10 /* JsonModelLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 840306FA1A2C8E490021EF10 /* JsonModelLoader.m */; };
+		84094E631A2C6C4900A7664A /* Mesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84094E621A2C6C4900A7664A /* Mesh.m */; };
 		840AC4E41A278B6600B88B59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AC4E31A278B6600B88B59 /* main.m */; };
 		840AC4E71A278B6600B88B59 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AC4E61A278B6600B88B59 /* AppDelegate.m */; };
 		840AC4EE1A278B6600B88B59 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AC4ED1A278B6600B88B59 /* GameViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		840306F91A2C8E490021EF10 /* JsonModelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonModelLoader.h; sourceTree = "<group>"; };
+		840306FA1A2C8E490021EF10 /* JsonModelLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonModelLoader.m; sourceTree = "<group>"; };
+		84094E611A2C6C4900A7664A /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		84094E621A2C6C4900A7664A /* Mesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mesh.m; sourceTree = "<group>"; };
 		840AC4DE1A278B6600B88B59 /* RunnerGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunnerGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840AC4E21A278B6600B88B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840AC4E31A278B6600B88B59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,6 +116,10 @@
 				840AC4F21A278B6600B88B59 /* Images.xcassets */,
 				840AC4F41A278B6600B88B59 /* LaunchScreen.xib */,
 				840AC4E11A278B6600B88B59 /* Supporting Files */,
+				84094E611A2C6C4900A7664A /* Mesh.h */,
+				84094E621A2C6C4900A7664A /* Mesh.m */,
+				840306F91A2C8E490021EF10 /* JsonModelLoader.h */,
+				840306FA1A2C8E490021EF10 /* JsonModelLoader.m */,
 			);
 			path = RunnerGame;
 			sourceTree = "<group>";
@@ -269,6 +279,8 @@
 			files = (
 				840AC4E71A278B6600B88B59 /* AppDelegate.m in Sources */,
 				840AC4EE1A278B6600B88B59 /* GameViewController.m in Sources */,
+				84094E631A2C6C4900A7664A /* Mesh.m in Sources */,
+				840306FB1A2C8E490021EF10 /* JsonModelLoader.m in Sources */,
 				840AC4E41A278B6600B88B59 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +474,7 @@
 				840AC5071A278B6700B88B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		840AC5081A278B6700B88B59 /* Build configuration list for PBXNativeTarget "RunnerGameTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +483,7 @@
 				840AC50A1A278B6700B88B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
