@@ -13,50 +13,38 @@
 
 + (Mesh *)loadFromFile:(NSString *)filename {
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:filename ofType:@"jm"]] options:kNilOptions error:nil];
-    NSArray *position = dict[@"position"];
-    NSArray *rotation = dict[@"rotation"];
-    NSArray *scaling = dict[@"scaling"];
     
-    NSArray *vertices = dict[@"vertices"];
-    NSArray *normals = dict[@"normals"];
-    NSArray *textures = dict[@"textures"];
-    NSArray *indices = dict[@"indices"];
+    NSString *name = dict[@"name"];
+    GLfloat *position = [self getFloatArray:dict[@"position"]];
+    GLfloat *rotation = [self getFloatArray:dict[@"rotation"]];
+    GLfloat *scaling = [self getFloatArray:dict[@"scaling"]];
     
-    NSString *mName = dict[@"name"];
-    GLfloat *mPosition = (GLfloat *)malloc(sizeof(GLfloat) * 3);
-    GLfloat *mRotation = (GLfloat *)malloc(sizeof(GLfloat) * 3);
-    GLfloat *mScaling = (GLfloat *)malloc(sizeof(GLfloat) * 3);
+    GLfloat *vertices = [self getFloatArray:dict[@"vertices"]];
+    GLfloat *normals = [self getFloatArray:dict[@"normals"]];
+    GLfloat *textures = [self getFloatArray:dict[@"textures"]];
+    NSArray *jsonIndices = dict[@"indices"];
+    GLuint *indices = [self getIntArray:jsonIndices];
+    GLuint indicesCount = (GLuint)[jsonIndices count];
     
-    for (int i = 0; i < 3; i++) {
-        mPosition[i] = [position[i] floatValue];
-        mRotation[i] = [rotation[i] floatValue];
-        mScaling[i] = [scaling[i] floatValue];
+    return [[Mesh alloc] initWithName:name position:position rotation:rotation scaling:scaling vertices:vertices normals:normals textures:textures indices:indices indicesCount:indicesCount];
+}
+
++ (GLfloat *)getFloatArray:(NSArray *)jsonArray {
+    NSUInteger arrayCount = [jsonArray count];
+    GLfloat *floatArray = (GLfloat *)malloc(sizeof(GLfloat) * arrayCount);
+    for (int i = 0; i < arrayCount; i++) {
+        floatArray[i] = [jsonArray[i] floatValue];
     }
-    
-    NSUInteger verticesCount = [vertices count];
-    GLfloat *mVertices = (GLfloat *)malloc(sizeof(GLfloat) * verticesCount);
-    for (int i = 0; i < verticesCount; i++) {
-        mVertices[i] = [vertices[i] floatValue];
+    return floatArray;
+}
+
++ (GLuint *)getIntArray:(NSArray *)jsonArray {
+    NSUInteger arrayCount = [jsonArray count];
+    GLuint *intArray = (GLuint *)malloc(sizeof(GLuint) * arrayCount);
+    for (int i = 0; i < arrayCount; i++) {
+        intArray[i] = [jsonArray[i] unsignedIntValue];
     }
-    
-    NSUInteger normalsCount = [normals count];
-    GLfloat *mNormals = (GLfloat *)malloc(sizeof(GLfloat) * normalsCount);
-    for (int i = 0; i < normalsCount; i++) {
-        mNormals[i] = [normals[i] floatValue];
-    }
-    
-    NSUInteger texturesCount = [textures count];
-    GLfloat *mTextures = (GLfloat *)malloc(sizeof(GLfloat) * texturesCount);
-    for (int i = 0; i < texturesCount; i++) {
-        mTextures[i] = [textures[i] floatValue];
-    }
-    
-    GLuint mIndicesCount = (GLuint)[indices count];
-    GLuint *mIndices = (GLuint *)malloc(sizeof(GLuint) * mIndicesCount);
-    for (int i = 0; i < mIndicesCount; i++) {
-        mIndices[i] = [indices[i] unsignedIntValue];
-    }
-    return [[Mesh alloc] initWithName:mName position:mPosition rotation:mRotation scaling:mScaling vertices:mVertices normals:mNormals textures:mTextures indices:mIndices indicesCount:mIndicesCount];
+    return intArray;
 }
 
 @end
