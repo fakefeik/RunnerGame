@@ -38,76 +38,6 @@
     Mesh *mesh;
 }
 
-
-
-- (void)initializeBuffers {
-    GLfloat mCubeVerticesDataInner[] = {
-        -1, -1, -1,
-        1, -1, -1,
-        1, 1, -1,
-        -1, 1, -1,
-        -1, -1, 1,
-        1, -1, 1,
-        1, 1, 1,
-        -1, 1, 1
-    };
-    
-    GLuint mCubeIndicesDataInner[] = {
-        0, 4, 5,
-        0, 5, 1,
-        1, 5, 6,
-        1, 6, 2,
-        2, 6, 7,
-        2, 7, 3,
-        3, 7, 4,
-        3, 4, 0,
-        4, 7, 6,
-        4, 6, 5,
-        3, 0, 1,
-        3, 1, 2
-    };
-    
-    GLfloat mCubeTexturesDataInner[] = {
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        0.0f, 1.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        0.0f, 1.0f,
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        0.0f, 0.0f,
-        1.0f, 0.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        1.0f, 0.0f,
-        1.0f, 1.0f,
-        0.0f, 1.0f,
-        0.0f, 0.0f,
-        0.0f, 1.0f,
-        0.0f, 1.0f,
-        0.0f, 0.0f
-    };
-    mCubeVerticesData = (GLfloat *)malloc(sizeof(GLfloat) * 24);
-    mCubeTexturesData = (GLfloat *)malloc(sizeof(GLfloat) * 40);
-    mCubeIndicesData = (GLuint *)malloc(sizeof(GLuint) * 36);
-    
-    for (int i = 0; i < 24; i++) {
-        mCubeVerticesData[i] = mCubeVerticesDataInner[i];
-    }
-    
-    for (int i = 0; i < 40; i++) {
-        mCubeTexturesData[i] = mCubeTexturesDataInner[i];
-    }
-    
-    for (int i = 0; i < 36; i++) {
-        mCubeIndicesData[i] = mCubeIndicesDataInner[i];
-    }
-    
-    mCubeIndicesCount = 36;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     handles = [[NSMutableDictionary alloc] init];
@@ -120,11 +50,6 @@
     GLKView *view = (GLKView *)self.view;
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
-    mesh = [JsonModelLoader loadFromFile:@"yoba"];
-    [mesh loadTexture:@"yoba.png"];
-    mesh.position[0] = mesh.position[1] = mesh.position[2] = 0;
-    mesh.scaling[0] = mesh.scaling[1] = mesh.scaling[2] = 0.4f;
-    //[self initializeBuffers];
     [self setupGL];
 }
 
@@ -193,7 +118,11 @@
     [handles setValue:[NSNumber numberWithInt:glGetAttribLocation(programHandle, "a_Color")] forKey:@"a_Color"];
     [handles setValue:[NSNumber numberWithInt:glGetAttribLocation(programHandle, "a_TexCoordinate")] forKey:@"a_TexCoordinate"];
     glUseProgram(programHandle);
-    //[self loadTexture];
+    
+    mesh = [JsonModelLoader loadFromFile:@"yoba"];
+    [mesh loadTexture:@"yoba.png"];
+    mesh.position[0] = mesh.position[1] = mesh.position[2] = 0;
+    mesh.scaling[0] = mesh.scaling[1] = mesh.scaling[2] = 0.5f;
 }
 
 - (void)tearDownGL {
@@ -212,10 +141,6 @@
     const float near = 1.0f;
     const float far = 10.0f;
     mProjectionMatrix = GLKMatrix4MakeFrustum(left, right, bottom, top, near, far);
-    
-    //long time = [[NSProcessInfo processInfo] systemUptime];
-    //time = time % 10000L;
-    //rotationAngle = (360.0f / 10000.0f) * ((int)time);
     rotationAngle += self.timeSinceLastUpdate;
 }
 
@@ -225,53 +150,15 @@
     glEnable(GL_CULL_FACE);
     glCullFace(GL_FRONT);
     
-    
     mViewMatrix = GLKMatrix4MakeLookAt(0.0f, 0.0f, 1.5f, 0.0f, 0.0f, -5.0f, 0.0f, 1.0f, 0.0f);
     mesh.rotation[0] = mesh.rotation[1] = mesh.rotation[2] = rotationAngle;
+    
+    mesh.position[0] = -0.7f;
+    [mesh drawWithHandles:handles viewMatrix:mViewMatrix projectionMatrix:mProjectionMatrix];
+    
+    mesh.position[0] = 0.7f;
     [mesh drawWireframeWithHandles:handles viewMatrix:mViewMatrix projectionMatrix:mProjectionMatrix];
-     //[self draw];
-}
-
-- (void)draw {
-
-    //long time = [[NSProcessInfo processInfo] systemUptime];
-    //time = time % 10000L;
-    //float angle = (360.0f / 10000.0f) * ((int)time);
     
-    glEnableVertexAttribArray([[handles valueForKey:@"a_Position"] intValue]);
-    glVertexAttribPointer([[handles valueForKey:@"a_Position"] intValue], 3, GL_FLOAT, false, 12, mCubeVerticesData);
-    
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, mCubeTextureId);
-    glUniform1i([[handles valueForKey:@"u_Texture"] intValue], 0);
-    glEnable(GL_TEXTURE_2D);
-    glEnableVertexAttribArray([[handles valueForKey:@"a_TexCoordinate"] intValue]);
-    glVertexAttribPointer([[handles valueForKey:@"a_TexCoordinate"] intValue], 2, GL_FLOAT, false, 8, mCubeTexturesData);
-    
-    mModelMatrix = GLKMatrix4Identity;
-    mModelMatrix = GLKMatrix4Translate(mModelMatrix, 0.0f, 0.0f, 0.0f);
-    mModelMatrix = GLKMatrix4Rotate(mModelMatrix, rotationAngle, 1.0f, 0.0f, 0.0f);
-    mModelMatrix = GLKMatrix4Rotate(mModelMatrix, rotationAngle, 0.0f, 1.0f, 0.0f);
-    mModelMatrix = GLKMatrix4Rotate(mModelMatrix, rotationAngle, 0.0f, 0.0f, 1.0f);
-    mModelMatrix = GLKMatrix4Scale(mModelMatrix, 0.3f, 0.3f, 0.3f);
-    
-    mMVPMatrix = GLKMatrix4Multiply(mViewMatrix, mModelMatrix);
-    mMVPMatrix = GLKMatrix4Multiply(mProjectionMatrix, mMVPMatrix);
-    
-    glUniformMatrix4fv([[handles valueForKey:@"u_MVPMatrix"] intValue], 1, false, mMVPMatrix.m);
-    glDrawElements(GL_TRIANGLES, mCubeIndicesCount, GL_UNSIGNED_INT, mCubeIndicesData);
-}
-
-- (void)loadTexture {
-    CGImageRef imageRef = [[UIImage imageNamed:@"yoba.png"] CGImage];
-    GLKTextureInfo *texInfo = [GLKTextureLoader textureWithCGImage:imageRef options:nil error:NULL];
-    mCubeTextureId = texInfo.name;
-    
-    glBindTexture(GL_TEXTURE_2D, texInfo.name);
-    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-    
-    //glTexImage2D(GL_TEXTURE_2D, <#GLint level#>, <#GLint internalformat#>, <#GLsizei width#>, <#GLsizei height#>, <#GLint border#>, <#GLenum format#>, <#GLenum type#>, <#const GLvoid *pixels#>)
 }
 
 @end

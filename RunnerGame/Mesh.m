@@ -98,6 +98,10 @@
     
     glUniformMatrix4fv([[handles valueForKey:@"u_MVPMatrix"] intValue], 1, false, mMVPMatrix.m);
     glDrawElements(GL_TRIANGLES, _indicesCount, GL_UNSIGNED_INT, _indices);
+    
+    glDisableVertexAttribArray([[handles valueForKey:@"a_Position"] intValue]);
+    glDisableVertexAttribArray([[handles valueForKey:@"a_TexCoordinate"] intValue]);
+    glDisable(GL_TEXTURE_2D);
 }
 
 - (void)drawWireframeWithHandles:(NSDictionary *)handles viewMatrix:(GLKMatrix4)viewMatrix projectionMatrix:(GLKMatrix4)projectionMatrix {
