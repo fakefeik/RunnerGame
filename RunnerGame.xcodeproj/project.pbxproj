@@ -16,16 +16,16 @@
 		840AC4F31A278B6600B88B59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840AC4F21A278B6600B88B59 /* Images.xcassets */; };
 		840AC4F61A278B6600B88B59 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840AC4F41A278B6600B88B59 /* LaunchScreen.xib */; };
 		840AC5021A278B6700B88B59 /* RunnerGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AC5011A278B6700B88B59 /* RunnerGameTests.m */; };
-		840AC5161A27948D00B88B59 /* autism_model.jm in Resources */ = {isa = PBXBuildFile; fileRef = 840AC50C1A27948D00B88B59 /* autism_model.jm */; };
-		840AC5171A27948D00B88B59 /* autism_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 840AC50D1A27948D00B88B59 /* autism_texture.jpg */; };
-		840AC5181A27948D00B88B59 /* cheeki_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 840AC50E1A27948D00B88B59 /* cheeki_texture.png */; };
-		840AC5191A27948D00B88B59 /* model.jm in Resources */ = {isa = PBXBuildFile; fileRef = 840AC50F1A27948D00B88B59 /* model.jm */; };
-		840AC51A1A27948D00B88B59 /* simple_shader.fs in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5101A27948D00B88B59 /* simple_shader.fs */; };
-		840AC51B1A27948D00B88B59 /* simple_shader.vs in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5111A27948D00B88B59 /* simple_shader.vs */; };
-		840AC51C1A27948D00B88B59 /* sky_2_cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5121A27948D00B88B59 /* sky_2_cube.png */; };
-		840AC51D1A27948D00B88B59 /* sphere.jm in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5131A27948D00B88B59 /* sphere.jm */; };
-		840AC51E1A27948D00B88B59 /* yoba.jm in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5141A27948D00B88B59 /* yoba.jm */; };
-		840AC51F1A27948D00B88B59 /* yoba.png in Resources */ = {isa = PBXBuildFile; fileRef = 840AC5151A27948D00B88B59 /* yoba.png */; };
+		842A68A11A3822BB009CB4D4 /* autism_model.jm in Resources */ = {isa = PBXBuildFile; fileRef = 842A68971A3822BB009CB4D4 /* autism_model.jm */; };
+		842A68A21A3822BB009CB4D4 /* autism_texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842A68981A3822BB009CB4D4 /* autism_texture.jpg */; };
+		842A68A31A3822BB009CB4D4 /* cheeki_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 842A68991A3822BB009CB4D4 /* cheeki_texture.png */; };
+		842A68A41A3822BB009CB4D4 /* model.jm in Resources */ = {isa = PBXBuildFile; fileRef = 842A689A1A3822BB009CB4D4 /* model.jm */; };
+		842A68A51A3822BB009CB4D4 /* simple_shader.fs in Resources */ = {isa = PBXBuildFile; fileRef = 842A689B1A3822BB009CB4D4 /* simple_shader.fs */; };
+		842A68A61A3822BB009CB4D4 /* simple_shader.vs in Resources */ = {isa = PBXBuildFile; fileRef = 842A689C1A3822BB009CB4D4 /* simple_shader.vs */; };
+		842A68A71A3822BB009CB4D4 /* sky_2_cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 842A689D1A3822BB009CB4D4 /* sky_2_cube.png */; };
+		842A68A81A3822BB009CB4D4 /* sphere.jm in Resources */ = {isa = PBXBuildFile; fileRef = 842A689E1A3822BB009CB4D4 /* sphere.jm */; };
+		842A68A91A3822BB009CB4D4 /* yoba.jm in Resources */ = {isa = PBXBuildFile; fileRef = 842A689F1A3822BB009CB4D4 /* yoba.jm */; };
+		842A68AA1A3822BB009CB4D4 /* yoba.png in Resources */ = {isa = PBXBuildFile; fileRef = 842A68A01A3822BB009CB4D4 /* yoba.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,16 +56,16 @@
 		840AC4FB1A278B6700B88B59 /* RunnerGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840AC5001A278B6700B88B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840AC5011A278B6700B88B59 /* RunnerGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunnerGameTests.m; sourceTree = "<group>"; };
-		840AC50C1A27948D00B88B59 /* autism_model.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = autism_model.jm; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/autism_model.jm; sourceTree = "<group>"; };
-		840AC50D1A27948D00B88B59 /* autism_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = autism_texture.jpg; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/autism_texture.jpg; sourceTree = "<group>"; };
-		840AC50E1A27948D00B88B59 /* cheeki_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cheeki_texture.png; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/cheeki_texture.png; sourceTree = "<group>"; };
-		840AC50F1A27948D00B88B59 /* model.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = model.jm; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/model.jm; sourceTree = "<group>"; };
-		840AC5101A27948D00B88B59 /* simple_shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = simple_shader.fs; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/simple_shader.fs; sourceTree = "<group>"; };
-		840AC5111A27948D00B88B59 /* simple_shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = simple_shader.vs; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/simple_shader.vs; sourceTree = "<group>"; };
-		840AC5121A27948D00B88B59 /* sky_2_cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sky_2_cube.png; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/sky_2_cube.png; sourceTree = "<group>"; };
-		840AC5131A27948D00B88B59 /* sphere.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sphere.jm; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/sphere.jm; sourceTree = "<group>"; };
-		840AC5141A27948D00B88B59 /* yoba.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = yoba.jm; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/yoba.jm; sourceTree = "<group>"; };
-		840AC5151A27948D00B88B59 /* yoba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yoba.png; path = ../../OpenGLProject/RunnerGame/app/src/main/assets/yoba.png; sourceTree = "<group>"; };
+		842A68971A3822BB009CB4D4 /* autism_model.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = autism_model.jm; sourceTree = "<group>"; };
+		842A68981A3822BB009CB4D4 /* autism_texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = autism_texture.jpg; sourceTree = "<group>"; };
+		842A68991A3822BB009CB4D4 /* cheeki_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cheeki_texture.png; sourceTree = "<group>"; };
+		842A689A1A3822BB009CB4D4 /* model.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = model.jm; sourceTree = "<group>"; };
+		842A689B1A3822BB009CB4D4 /* simple_shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = simple_shader.fs; sourceTree = "<group>"; };
+		842A689C1A3822BB009CB4D4 /* simple_shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = simple_shader.vs; sourceTree = "<group>"; };
+		842A689D1A3822BB009CB4D4 /* sky_2_cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky_2_cube.png; sourceTree = "<group>"; };
+		842A689E1A3822BB009CB4D4 /* sphere.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.jm; sourceTree = "<group>"; };
+		842A689F1A3822BB009CB4D4 /* yoba.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yoba.jm; sourceTree = "<group>"; };
+		842A68A01A3822BB009CB4D4 /* yoba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yoba.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 		840AC4E01A278B6600B88B59 /* RunnerGame */ = {
 			isa = PBXGroup;
 			children = (
-				840AC50B1A27947100B88B59 /* Assets */,
+				842A68961A3822BB009CB4D4 /* Assets */,
 				840AC4E51A278B6600B88B59 /* AppDelegate.h */,
 				840AC4E61A278B6600B88B59 /* AppDelegate.m */,
 				840AC4EC1A278B6600B88B59 /* GameViewController.h */,
@@ -150,21 +150,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		840AC50B1A27947100B88B59 /* Assets */ = {
+		842A68961A3822BB009CB4D4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				840AC50C1A27948D00B88B59 /* autism_model.jm */,
-				840AC50D1A27948D00B88B59 /* autism_texture.jpg */,
-				840AC50E1A27948D00B88B59 /* cheeki_texture.png */,
-				840AC50F1A27948D00B88B59 /* model.jm */,
-				840AC5101A27948D00B88B59 /* simple_shader.fs */,
-				840AC5111A27948D00B88B59 /* simple_shader.vs */,
-				840AC5121A27948D00B88B59 /* sky_2_cube.png */,
-				840AC5131A27948D00B88B59 /* sphere.jm */,
-				840AC5141A27948D00B88B59 /* yoba.jm */,
-				840AC5151A27948D00B88B59 /* yoba.png */,
+				842A68971A3822BB009CB4D4 /* autism_model.jm */,
+				842A68981A3822BB009CB4D4 /* autism_texture.jpg */,
+				842A68991A3822BB009CB4D4 /* cheeki_texture.png */,
+				842A689A1A3822BB009CB4D4 /* model.jm */,
+				842A689B1A3822BB009CB4D4 /* simple_shader.fs */,
+				842A689C1A3822BB009CB4D4 /* simple_shader.vs */,
+				842A689D1A3822BB009CB4D4 /* sky_2_cube.png */,
+				842A689E1A3822BB009CB4D4 /* sphere.jm */,
+				842A689F1A3822BB009CB4D4 /* yoba.jm */,
+				842A68A01A3822BB009CB4D4 /* yoba.png */,
 			);
 			name = Assets;
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,17 +250,17 @@
 			files = (
 				840AC4F61A278B6600B88B59 /* LaunchScreen.xib in Resources */,
 				840AC4F11A278B6600B88B59 /* Main.storyboard in Resources */,
+				842A68A31A3822BB009CB4D4 /* cheeki_texture.png in Resources */,
+				842A68A91A3822BB009CB4D4 /* yoba.jm in Resources */,
+				842A68A71A3822BB009CB4D4 /* sky_2_cube.png in Resources */,
+				842A68AA1A3822BB009CB4D4 /* yoba.png in Resources */,
 				840AC4F31A278B6600B88B59 /* Images.xcassets in Resources */,
-				840AC5191A27948D00B88B59 /* model.jm in Resources */,
-				840AC5161A27948D00B88B59 /* autism_model.jm in Resources */,
-				840AC51E1A27948D00B88B59 /* yoba.jm in Resources */,
-				840AC51D1A27948D00B88B59 /* sphere.jm in Resources */,
-				840AC51A1A27948D00B88B59 /* simple_shader.fs in Resources */,
-				840AC5181A27948D00B88B59 /* cheeki_texture.png in Resources */,
-				840AC51F1A27948D00B88B59 /* yoba.png in Resources */,
-				840AC51B1A27948D00B88B59 /* simple_shader.vs in Resources */,
-				840AC5171A27948D00B88B59 /* autism_texture.jpg in Resources */,
-				840AC51C1A27948D00B88B59 /* sky_2_cube.png in Resources */,
+				842A68A21A3822BB009CB4D4 /* autism_texture.jpg in Resources */,
+				842A68A11A3822BB009CB4D4 /* autism_model.jm in Resources */,
+				842A68A61A3822BB009CB4D4 /* simple_shader.vs in Resources */,
+				842A68A41A3822BB009CB4D4 /* model.jm in Resources */,
+				842A68A81A3822BB009CB4D4 /* sphere.jm in Resources */,
+				842A68A51A3822BB009CB4D4 /* simple_shader.fs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
