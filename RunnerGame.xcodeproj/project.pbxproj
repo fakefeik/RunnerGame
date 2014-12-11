@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84011FA71A3A043C00F69EF7 /* Plane.m in Sources */ = {isa = PBXBuildFile; fileRef = 84011FA61A3A043C00F69EF7 /* Plane.m */; };
+		84011FAA1A3A06BB00F69EF7 /* SimplePlane.m in Sources */ = {isa = PBXBuildFile; fileRef = 84011FA91A3A06BB00F69EF7 /* SimplePlane.m */; };
+		84011FAD1A3A0CD400F69EF7 /* skybox.jm in Resources */ = {isa = PBXBuildFile; fileRef = 84011FAB1A3A0CD400F69EF7 /* skybox.jm */; };
+		84011FAE1A3A0CD400F69EF7 /* skybox.png in Resources */ = {isa = PBXBuildFile; fileRef = 84011FAC1A3A0CD400F69EF7 /* skybox.png */; };
+		84011FB01A3A0FAC00F69EF7 /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = 84011FAF1A3A0FAC00F69EF7 /* ground.png */; };
 		840306FB1A2C8E490021EF10 /* JsonModelLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 840306FA1A2C8E490021EF10 /* JsonModelLoader.m */; };
 		84094E631A2C6C4900A7664A /* Mesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84094E621A2C6C4900A7664A /* Mesh.m */; };
 		840AC4E41A278B6600B88B59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840AC4E31A278B6600B88B59 /* main.m */; };
@@ -39,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84011FA51A3A043C00F69EF7 /* Plane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plane.h; sourceTree = "<group>"; };
+		84011FA61A3A043C00F69EF7 /* Plane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Plane.m; sourceTree = "<group>"; };
+		84011FA81A3A06BB00F69EF7 /* SimplePlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePlane.h; sourceTree = "<group>"; };
+		84011FA91A3A06BB00F69EF7 /* SimplePlane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePlane.m; sourceTree = "<group>"; };
+		84011FAB1A3A0CD400F69EF7 /* skybox.jm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = skybox.jm; sourceTree = "<group>"; };
+		84011FAC1A3A0CD400F69EF7 /* skybox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skybox.png; sourceTree = "<group>"; };
+		84011FAF1A3A0FAC00F69EF7 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
 		840306F91A2C8E490021EF10 /* JsonModelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonModelLoader.h; sourceTree = "<group>"; };
 		840306FA1A2C8E490021EF10 /* JsonModelLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonModelLoader.m; sourceTree = "<group>"; };
 		84094E611A2C6C4900A7664A /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
@@ -120,6 +132,10 @@
 				84094E621A2C6C4900A7664A /* Mesh.m */,
 				840306F91A2C8E490021EF10 /* JsonModelLoader.h */,
 				840306FA1A2C8E490021EF10 /* JsonModelLoader.m */,
+				84011FA51A3A043C00F69EF7 /* Plane.h */,
+				84011FA61A3A043C00F69EF7 /* Plane.m */,
+				84011FA81A3A06BB00F69EF7 /* SimplePlane.h */,
+				84011FA91A3A06BB00F69EF7 /* SimplePlane.m */,
 			);
 			path = RunnerGame;
 			sourceTree = "<group>";
@@ -153,6 +169,9 @@
 		842A68961A3822BB009CB4D4 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				84011FAF1A3A0FAC00F69EF7 /* ground.png */,
+				84011FAB1A3A0CD400F69EF7 /* skybox.jm */,
+				84011FAC1A3A0CD400F69EF7 /* skybox.png */,
 				842A68971A3822BB009CB4D4 /* autism_model.jm */,
 				842A68981A3822BB009CB4D4 /* autism_texture.jpg */,
 				842A68991A3822BB009CB4D4 /* cheeki_texture.png */,
@@ -253,11 +272,14 @@
 				842A68A31A3822BB009CB4D4 /* cheeki_texture.png in Resources */,
 				842A68A91A3822BB009CB4D4 /* yoba.jm in Resources */,
 				842A68A71A3822BB009CB4D4 /* sky_2_cube.png in Resources */,
+				84011FAE1A3A0CD400F69EF7 /* skybox.png in Resources */,
 				842A68AA1A3822BB009CB4D4 /* yoba.png in Resources */,
 				840AC4F31A278B6600B88B59 /* Images.xcassets in Resources */,
 				842A68A21A3822BB009CB4D4 /* autism_texture.jpg in Resources */,
+				84011FAD1A3A0CD400F69EF7 /* skybox.jm in Resources */,
 				842A68A11A3822BB009CB4D4 /* autism_model.jm in Resources */,
 				842A68A61A3822BB009CB4D4 /* simple_shader.vs in Resources */,
+				84011FB01A3A0FAC00F69EF7 /* ground.png in Resources */,
 				842A68A41A3822BB009CB4D4 /* model.jm in Resources */,
 				842A68A81A3822BB009CB4D4 /* sphere.jm in Resources */,
 				842A68A51A3822BB009CB4D4 /* simple_shader.fs in Resources */,
@@ -278,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84011FA71A3A043C00F69EF7 /* Plane.m in Sources */,
+				84011FAA1A3A06BB00F69EF7 /* SimplePlane.m in Sources */,
 				840AC4E71A278B6600B88B59 /* AppDelegate.m in Sources */,
 				840AC4EE1A278B6600B88B59 /* GameViewController.m in Sources */,
 				84094E631A2C6C4900A7664A /* Mesh.m in Sources */,

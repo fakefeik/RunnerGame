@@ -9,25 +9,7 @@
 #import "Mesh.h"
 #import <GLKit/GLKit.h>
 
-@implementation Mesh {
-    @private
-    NSString *_name;
-    GLfloat *_position;
-    GLfloat *_rotation;
-    GLfloat *_scaling;
-    
-    GLfloat *_vertices;
-    GLfloat *_normals;
-    GLfloat *_textures;
-    GLuint *_indices;
-    GLuint _indicesCount;
-    GLuint *_linesIndices;
-    GLuint _linesIndicesCount;
-    GLuint _textureId;
-    
-    GLKMatrix4 mModelMatrix;
-    GLKMatrix4 mMVPMatrix;
-}
+@implementation Mesh
 
 @synthesize position = _position;
 @synthesize rotation = _rotation;
@@ -73,6 +55,8 @@
     glBindTexture(GL_TEXTURE_2D, texInfo.name);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 }
 
 - (void)drawWithHandles:(NSDictionary *)handles viewMatrix:(GLKMatrix4)viewMatrix projectionMatrix:(GLKMatrix4)projectionMatrix {

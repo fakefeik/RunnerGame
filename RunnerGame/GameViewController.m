@@ -9,6 +9,8 @@
 #import "GameViewController.h"
 #import <OpenGLES/ES2/glext.h>
 #import "Mesh.h"
+#import "Plane.h"
+#import "SimplePlane.h"
 #import "JsonModelLoader.h"
 
 
@@ -36,6 +38,10 @@
     float rotationAngle;
     
     Mesh *mesh;
+    //Plane *plane;
+    //SimplePlane *texPlane;
+    //Mesh *skybox;
+    
 }
 
 - (void)viewDidLoad {
@@ -119,10 +125,22 @@
     [handles setValue:[NSNumber numberWithInt:glGetAttribLocation(programHandle, "a_TexCoordinate")] forKey:@"a_TexCoordinate"];
     glUseProgram(programHandle);
     
+    //plane = [[Plane alloc] initWithWidth:10 height:10 widthSegments:50 heightSegments:50];
+    //texPlane = [[SimplePlane alloc] initWithWidth:10 height:10 textureCoordinates:10];
+    //texPlane.rotation[0] = 90;
+    //[texPlane loadTexture:@"ground.png"];
+    //plane.position[0] = plane.position[1] = plane.position[2] = 0;
+    //plane.scaling[0] = plane.scaling[1] = plane.scaling[2] = 1.0f;
+    //plane.rotation[0] = plane.rotation[1] = plane.rotation[2] = 0;
     mesh = [JsonModelLoader loadFromFile:@"yoba"];
     [mesh loadTexture:@"yoba.png"];
     mesh.position[0] = mesh.position[1] = mesh.position[2] = 0;
     mesh.scaling[0] = mesh.scaling[1] = mesh.scaling[2] = 0.5f;
+    
+    //skybox = [JsonModelLoader loadFromFile:@"skybox"];
+    //[skybox loadTexture:@"skybox.png"];
+    //skybox.rotation[0] = 180;
+    //skybox.scaling[0] = skybox.scaling[1] = skybox.scaling[2] = 10;
 }
 
 - (void)tearDownGL {
@@ -158,7 +176,13 @@
     
     mesh.position[0] = 0.7f;
     [mesh drawWireframeWithHandles:handles viewMatrix:mViewMatrix projectionMatrix:mProjectionMatrix];
-    
+    //plane.rotation[0] = plane.rotation[1] = plane.rotation[2] = rotationAngle;
+
+    //[plane drawWireframeWithHandles:handles viewMatrix:mViewMatrix projectionMatrix:mProjectionMatrix];
+    //texPlane.rotation[0] = texPlane.rotation[1] = texPlane.rotation[2] = rotationAngle;
+    //[texPlane drawWithHandles:handles viewMatrix:mViewMatrix projectionMatrix:mProjectionMatrix];
+    //glCullFace(GL_BACK);
+    //[skybox drawWithHandles:handles viewMatrix:mViewMatrix projectionMatrix:mProjectionMatrix];
 }
 
 @end
